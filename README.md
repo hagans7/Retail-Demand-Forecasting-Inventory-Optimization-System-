@@ -1,6 +1,4 @@
-# Retail Decision Intelligence Platform
-### V1 Forecast Engine · V2 Decision Intelligence · Day-0 Bootstrap Protocol
-### R&D Baseline: MAE 2.500 · Promo-MAE 2.641 · +55.4% vs Naive
+# Retail  Platform
 
 ---
 

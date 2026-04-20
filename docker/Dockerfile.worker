@@ -1,0 +1,17 @@
+FROM python:3.11.9-slim
+WORKDIR /app
+
+# libgomp1: required by LightGBM (celery worker runs batch inference)
+RUN apt-get update && apt-get install -y --no-install-recommends libgomp1 \
+    && rm -rf /var/lib/apt/lists/*
+
+COPY pyproject.toml .
+RUN pip install --no-cache-dir --upgrade pip && pip install --no-cache-dir ".[prod]"
+
+COPY src/ ./src/
+COPY pipelines/ ./pipelines/
+RUN mkdir -p /app/logs
+
+# Default: Celery worker
+# Override in docker-compose scheduler service: celery beat
+CMD ["celery", "-A", "src.worker", "worker", "--loglevel=info", "--concurrency=4"]

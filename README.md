@@ -11,9 +11,112 @@ This project started as an R&D exercise on a 5-store, 50-item retail dataset (4.
 The goal was not just to build a model, but to build a system that a business team could actually use — where forecasts inform inventory decisions and promo simulations come with uncertainty estimates and audit trails.
 
 ---
+# Dataset
 
-## link dataset:
-https://www.kaggle.com/datasets/dhrubangtalukdar/store-item-demand-forecasting-dataset/data
+This project uses the **Store Item Demand Forecasting Dataset** from Kaggle.
+
+Source: [:contentReference[oaicite:0]{index=0} ](https://www.kaggle.com/datasets/dhrubangtalukdar/store-item-demand-forecasting-dataset/data) 
+
+---
+
+## Overview
+
+The dataset contains synthetic daily retail sales data designed to simulate realistic store operations.
+
+It is structured for forecasting, inventory planning, promotion analysis, and retail machine learning use cases.
+
+The data covers **January 2019 to December 2023** and represents demand behavior across multiple stores and products.
+
+---
+
+## Core Characteristics
+
+- **Granularity:** Daily transactions  
+- **Stores:** 50 locations  
+- **Items:** 50 products  
+- **Time Range:** 5 years  
+- **Observation Level:** Store × Item × Day  
+
+This results in millions of time-series observations suitable for production-style experimentation.
+
+---
+
+## Available Columns
+
+| Column | Description |
+|---|---|
+| `date` | Observation date |
+| `store_id` | Unique store identifier |
+| `item_id` | Unique product identifier |
+| `sales` | Units sold on that day |
+| `price` | Selling price |
+| `promo` | Promotion flag (1 = active) |
+| `weekday` | Day of week |
+| `month` | Month number |
+
+---
+
+## Why This Dataset Was Chosen
+
+This dataset was selected because it captures several important retail demand behaviors:
+
+- Multi-store and multi-product forecasting challenges  
+- Seasonal demand fluctuations  
+- Weekly sales cycles  
+- Promotion-driven uplift  
+- Price sensitivity behavior  
+- Long-term growth trend  
+- Random noise similar to real operations  
+
+These properties make it highly relevant for building forecasting and decision-support systems.
+
+---
+
+## Use in This Project
+
+The dataset is used as the foundation for:
+
+### Demand Forecasting
+
+Predict future unit sales using historical demand, pricing, promotions, and seasonality.
+
+### Inventory Planning
+
+Estimate replenishment quantities to reduce stockout and overstock risk.
+
+### Promotion Simulation
+
+Measure expected sales uplift and profitability before launching discounts.
+
+### Monitoring & Retraining
+
+Evaluate forecast quality over time and trigger model improvement workflows.
+
+---
+
+## Important Note
+
+This dataset is **synthetic**, meaning it was artificially generated to mimic realistic retail patterns.
+
+It does not contain real customer or company data, making it safe for experimentation and portfolio projects.
+
+---
+
+## Scale Advantage
+
+Because the dataset spans multiple years and many store-item combinations, it enables testing of:
+
+- Large-scale batch forecasting  
+- Automated pipelines  
+- Backtesting frameworks  
+- Multi-entity time-series modeling  
+- Production-style MLOps workflows  
+
+---
+
+## Summary
+
+This dataset provides a practical environment to build an end-to-end retail forecasting platform using realistic business scenarios without relying on private commercial data.
 
 ---
 ## Tech Stack

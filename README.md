@@ -9,6 +9,7 @@ A production-grade retail forecasting and promotion decision system built on Lig
 This project started as an R&D exercise on a 5-store, 50-item retail dataset (4.5M daily transactions, 2019–2023). After validating the forecasting approach through EDA, statistical diagnostics, and modeling notebooks, the results were productionized into a deployable platform with automated pipelines, monitoring, and an API layer.
 
 The goal was not just to build a model, but to build a system that a business team could actually use — where forecasts inform inventory decisions and promo simulations come with uncertainty estimates and audit trails.
+
 ---
 
 ## link dataset:

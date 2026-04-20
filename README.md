@@ -15,7 +15,7 @@ The goal was not just to build a model, but to build a system that a business te
 
 This project uses the **Store Item Demand Forecasting Dataset** from Kaggle.
 
-Source: [:contentReference[oaicite:0]{index=0} ](https://www.kaggle.com/datasets/dhrubangtalukdar/store-item-demand-forecasting-dataset/data) 
+Source: [Store Item Demand Forecasting Dataset](https://www.kaggle.com/datasets/dhrubangtalukdar/store-item-demand-forecasting-dataset/data) 
 
 ---
 

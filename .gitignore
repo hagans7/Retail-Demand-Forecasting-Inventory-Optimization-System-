@@ -1,0 +1,115 @@
+# ── Python ────────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.pyo
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# ── Virtual environments ───────────────────────────────────────────────────────
+.venv/
+venv/
+ENV/
+env/
+.env/
+
+# ── Environment & Secrets (NEVER commit these) ────────────────────────────────
+.env
+.env.dev
+.env.prod
+.env.local
+.env.test
+# .env.prod.example is safe to commit (no real credentials)
+# .env.dev.example is safe to commit
+
+# ── ML Artifacts (large binary files — store in MinIO/DVC, not git) ───────────
+*.joblib
+*.pkl
+*.pickle
+*.h5
+*.hdf5
+*.onnx
+*.pt
+*.pth
+*.bin
+*.model
+models/
+artifacts/
+mlruns/
+
+# ── Data files (store in PostgreSQL/object storage, not git) ──────────────────
+*.csv
+*.parquet
+*.feather
+*.arrow
+data/
+datasets/
+notebook/data/
+
+# ── Logs ──────────────────────────────────────────────────────────────────────
+logs/
+*.log
+*.log.*
+
+# ── Docker volumes (runtime state, not code) ──────────────────────────────────
+postgres_data/
+redis_data/
+minio_data/
+
+# ── Testing & Coverage ────────────────────────────────────────────────────────
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.tox/
+
+# ── IDE & OS ──────────────────────────────────────────────────────────────────
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ── Jupyter Notebooks (checkpoints) ──────────────────────────────────────────
+.ipynb_checkpoints/
+*.ipynb_checkpoint
+
+# ── Alembic (generated versions OK, but not compiled) ─────────────────────────
+# alembic/versions/ — committed intentionally
+
+# ── uv lockfile (commit for reproducibility) ──────────────────────────────────
+# uv.lock — safe to commit
+
+# ── Celery ────────────────────────────────────────────────────────────────────
+celerybeat-schedule
+celerybeat.pid
+
+# ── Temporary files ───────────────────────────────────────────────────────────
+*.tmp
+*.temp
+.cache/
+tmp/

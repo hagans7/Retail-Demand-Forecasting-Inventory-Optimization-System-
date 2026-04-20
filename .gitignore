@@ -122,3 +122,8 @@ celerybeat.pid
 *.temp
 .cache/
 tmp/
+
+#file
+commit_template.txt
+.gitmessage.txt
+readme-for-self.md

@@ -150,5 +150,3 @@ python -m pytest tests/ -v
 # Critical deployment gates (CI blocks on failure)
 python -m pytest tests/unit/test_pipelines/ -v
 ```
-
-95 tests total — unit and integration, including critical deployment gates.
